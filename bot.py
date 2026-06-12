@@ -162,4 +162,6 @@ async def stat(message: types.Message):
     await message.answer(f"Jami foydalanuvchilar: {cursor.fetchone()[0]}")
 
 if __name__ == '__main__':
+    # Ushbu qator botni qayta ishga tushirish uchun qo'shildi
+print("Restarting bot...")
     executor.start_polling(dp, skip_updates=True)
