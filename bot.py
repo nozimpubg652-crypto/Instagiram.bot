@@ -11,7 +11,7 @@ from aiogram.dispatcher.filters.state import State, StatesGroup
 API_TOKEN = '8870187278:AAGWhBPnKCkK6MVpdMta7rGOapUAq0FvaTw'
 CHANNEL_ID = '@temuzikinsta'
 ADMIN_ID = 8639222385
-KARTA_RAQAM = "8600 1234 5678 9012 (Roziyev)" # Karta raqamingizni kiriting
+KARTA_RAQAM = "karta hozirchalik yopiq (Roziyev)" # Karta raqamingizni kiriting
 
 logging.basicConfig(level=logging.INFO)
 bot = Bot(token=API_TOKEN)
