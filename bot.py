@@ -12,10 +12,10 @@ from aiogram.dispatcher.filters.state import State, StatesGroup
 # --- SOZLAMALAR ---
 API_TOKEN = '8870187278:AAGWhBPnKCkK6MVpdMta7rGOapUAq0FvaTw'
 CHANNEL_ID = '@temuzikinsta'
-ADMIN_ID = 6488199143
+ADMIN_ID = 8639222385
 SECURITY_ID = 8639222385
-ADMIN_USERNAME = "@SizningUsername"
-KARTA_RAQAM = "8600 0000 0000 0000"
+ADMIN_USERNAME = "@roziyev2"
+KARTA_RAQAM = "uzur hozir karta bloklangan"
 
 bot = Bot(token=API_TOKEN)
 storage = MemoryStorage()
