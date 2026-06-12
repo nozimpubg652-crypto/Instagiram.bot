@@ -163,5 +163,5 @@ async def stat(message: types.Message):
 
 if __name__ == '__main__':
     # Ushbu qator botni qayta ishga tushirish uchun qo'shildi
-print("Restarting bot...")
-    executor.start_polling(dp, skip_updates=True)
+    print("Restarting bot...")
+      executor.start_polling(dp, skip_updates=True)
