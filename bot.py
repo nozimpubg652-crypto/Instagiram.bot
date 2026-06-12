@@ -121,7 +121,11 @@ async def play_game(message: types.Message):
 @dp.message_handler(text="🚀 Tekin nakrutka")
 async def nakrutka(message: types.Message):
     cursor.execute('SELECT referrals FROM users WHERE id=?', (message.from_user.id,))
-    ref = cursor.fetchone()[0]
+    data = cursor.fetchone() # 1. Bazadan ma'lumotni olib, data nomli idishga solamiz
+if data:                 # 2. Agar idishda ma'lumot bo'lsa
+    ref = data[0]        # 3. Ma'lumotni o'qiymiz
+else:                    # 4. Agar bazada hech narsa bo'lmasa
+    ref = 0              # 5. ref ni 0 ga tenglaymiz (xato chiqmaydi)
     if ref < 10:
         await message.answer(f"10 ta do'st taklif qiling (Hozir: {ref}/10).\nSilka: https://t.me/{(await bot.get_me()).username}?start={message.from_user.id}")
     else:
