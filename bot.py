@@ -81,9 +81,16 @@ async def process_media(message: types.Message, state: FSMContext):
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info = ydl.extract_info(message.text, download=True)
             caption = info.get('description', '')
-        await message.answer_video(open('media.mp4', 'rb'), caption="🎬 Video")
-        os.system("ffmpeg -i media.mp4 -vn -acodec libmp3lame -q:a 2 audio.mp3 -y")
-        await message.answer_audio(open('audio.mp3', 'rb'), caption="🎵 Musiqa")
+        # Matn va heshteglarni ajratib olamiz
+    text_only = ' '.join([w for w in caption.split() if not w.startswith('#')])
+    hashtags = ' '.join([w for w in caption.split() if w.startswith('#')])
+    
+    # 1. Videoni matn va heshteglar bilan bitta qilib yuboramiz
+    await message.answer_video(open('media.mp4', 'rb'), caption=f"{text_only}\n\n{hashtags}")
+    
+    # 2. Musiqani alohida xabar sifatida yuboramiz
+    os.system("ffmpeg -i media.mp4 -vn -acodec libmp3lame -q:a 2 audio.mp3 -y")
+    await message.answer_audio(open('audio.mp3', 'rb'), caption="🎵 Musiqa")
         tags = [w for w in caption.split() if w.startswith('#')]
         if tags: await message.answer(f"🏷 Heshteglar: {' '.join(tags)}")
         os.remove('media.mp4'); os.remove('audio.mp3')
