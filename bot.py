@@ -90,5 +90,5 @@ async def back(message: types.Message):
     await message.answer("Asosiy menyu:", reply_markup=get_main_markup())
 
 if __name__ == '__main__':
-    # reset_webhook=True eski ulanishlarni uzib tashlaydi
+    # reset_webhook=True - eng muhimi shu!
     executor.start_polling(dp, skip_updates=True, reset_webhook=True)
