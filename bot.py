@@ -91,6 +91,8 @@ async def back(message: types.Message):
 
 
 if __name__ == '__main__':
-    # Webhookni tozalash va eski ulanishni majburiy uzish
-    bot.delete_webhook(drop_pending_updates=True) 
-    executor.start_polling(dp, skip_updates=True)
+    # Buni alohida funksiya qilib chaqirish kerak
+    async def on_startup(dp):
+        await bot.delete_webhook(drop_pending_updates=True)
+
+    executor.start_polling(dp, on_startup=on_startup, skip_updates=True)
