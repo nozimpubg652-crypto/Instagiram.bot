@@ -128,10 +128,9 @@ else:                    # 4. Agar bazada hech narsa bo'lmasa
     ref = 0              # 5. ref ni 0 ga tenglaymiz (xato chiqmaydi)
     if ref < 10:
         # 130-qator atrofini shunday qiling:
-me = await bot.get_me() # Bot ma'lumotini alohida olamiz
-bot_username = me.username
+    me = await bot.get_me() # Bot ma'lumotini alohida olamiz
+    bot_username = me.username
 
-if ref < 10:
     await message.answer(f"10 ta do'st taklif qiling (Hozir: {ref}/10).\nSilka: https://t.me/{bot_username}?start={message.from_user.id}")
 else:
     await message.answer("Tabriklaymiz! Mana: https://leofame.com")
