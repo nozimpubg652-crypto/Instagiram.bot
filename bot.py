@@ -89,6 +89,8 @@ async def start(message: types.Message, state: FSMContext):
 async def back(message: types.Message):
     await message.answer("Asosiy menyu:", reply_markup=get_main_markup())
 
+
 if __name__ == '__main__':
-    # reset_webhook=True - eng muhimi shu!
-    executor.start_polling(dp, skip_updates=True, reset_webhook=True)
+    # Webhookni tozalash va eski ulanishni majburiy uzish
+    bot.delete_webhook(drop_pending_updates=True) 
+    executor.start_polling(dp, skip_updates=True)
