@@ -8,7 +8,7 @@ from aiogram.dispatcher import FSMContext
 from aiogram.dispatcher.filters.state import State, StatesGroup
 
 API_TOKEN = '8870187278:AAEQM8m8c7G1m4qVpyAnWiWqMdD9QvzXKGQ'
-CHANNEL_ID = '@sizning_kanal_username' # KANALINGIZNI SHU YERGA YOZING
+CHANNEL_ID = '@temuzikinsta' # KANALINGIZNI SHU YERGA YOZING
 
 logging.basicConfig(level=logging.INFO)
 
