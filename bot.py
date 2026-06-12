@@ -106,4 +106,5 @@ async def nakrutka(message: types.Message):
 # ... (qolgan funksiyalaringizni xuddi shu tarzda saqlab qoling)
 
 if __name__ == '__main__':
-    executor.start_polling(dp, skip_updates=True)
+    # Eski pollingni to'liq o'chirish uchun
+    executor.start_polling(dp, skip_updates=True, reset_webhook=True)
