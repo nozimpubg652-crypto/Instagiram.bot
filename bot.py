@@ -1,4 +1,5 @@
-import os asyncio
+import os
+import asyncio
 import logging
 import random
 from aiogram import Bot, Dispatcher, types, F
