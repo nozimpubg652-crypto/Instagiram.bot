@@ -8,7 +8,7 @@ from aiogram.fsm.state import StatesGroup, State
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 
 # --- SOZLAMALAR ---
-BOT_TOKEN = "8870187278:AAEQM8m8c7G1m4qVpyAnWiWqMdD9QvzXKGQ"
+BOT_TOKEN = "8870187278:AAFgc0NaXYe6pasN2CKqDf3hD36CQxFb4Jg"
 ADMIN_ID = 8639222385
 KARTA_RAQAM = "karta tez kunda (Roziyev)"
 
