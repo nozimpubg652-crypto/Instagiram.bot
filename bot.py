@@ -7,7 +7,7 @@ from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import StatesGroup, State
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 
-BOT_TOKEN = "8870187278:AAFgc0NaXYe6pasN2CKqDf3hD36CQxFb4Jg"
+BOT_TOKEN = "8514343100:AAGnKDxm66i8zTdzBx5FSWEFMtDBIAYbr4s"
 ADMIN_ID = 8639222385
 CHANNEL_ID = "@temuzikinsta" 
 
