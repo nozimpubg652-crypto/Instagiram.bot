@@ -205,8 +205,13 @@ async def cancel_action(message: types.Message, state: FSMContext):
     await message.answer("Asosiy menyu:", reply_markup=get_main_menu())
 
 async def main():
-    await bot.delete_webhook(drop_pending_updates=True) # Konfliktni oldini oladi
+    # 1. Eski ulanishlarni tozalash (majburiy)
+    await bot.delete_webhook(drop_pending_updates=True)
+    
+    # 2. Botingizni ishga tushirish
+    print("Bot ishga tushdi...")
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
+    import asyncio
     asyncio.run(main())
