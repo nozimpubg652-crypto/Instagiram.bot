@@ -14,7 +14,17 @@ CHANNEL_ID = "@temuzikinsta"
 
 logging.basicConfig(level=logging.INFO)
 bot = Bot(token=BOT_TOKEN)
-dp = Dispatcher()
+dp = Dispatcher()from aiogram import F
+from aiogram.types import Message
+from aiogram.filters import Command
+
+@dp.message(Command("start"))
+async def cmd_start(message: Message):
+    await message.answer("Salom! Men ishlayapman.")
+
+@dp.message(F.text)
+async def echo_handler(message: Message):
+    await message.answer(f"Siz: {message.text}")
 
 class BotStates(StatesGroup):
     savol_yuborish = State()
