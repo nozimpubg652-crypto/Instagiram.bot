@@ -10,7 +10,8 @@ BOT_TOKEN = os.getenv("BOT_TOKEN")
 ADMIN_ID = 8639222385
 CHANNEL_ID = "@temuzikinsta"
 
-bot = Bot(token=BOT_TOKEN)
+bot = # BOT_TOKEN = os.getenv("BOT_TOKEN")  <- Buni o'chirib turing
+BOT_TOKEN = "8514343100:AAGcJvEM-wOSMU7ZOdzzbqxZCnE3WMnxDpo" # To'g'ridan-to'g'ri yozing
 dp = Dispatcher()
 
 # 1000+ niklar generatori
