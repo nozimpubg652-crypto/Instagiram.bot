@@ -8,9 +8,9 @@ from aiogram.fsm.state import StatesGroup, State
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 
 # --- SOZLAMALAR ---
-BOT_TOKEN = "8870187278:AAGWhBPnKCkK6MVpdMta7rGOapUAq0FvaTw"
+BOT_TOKEN = "8870187278:AAEQM8m8c7G1m4qVpyAnWiWqMdD9QvzXKGQ"
 ADMIN_ID = 8639222385
-KARTA_RAQAM = "8600 1234 5678 9012 (Roziyev)"
+KARTA_RAQAM = "karta tez kunda (Roziyev)"
 
 logging.basicConfig(level=logging.INFO)
 bot = Bot(token=BOT_TOKEN)
