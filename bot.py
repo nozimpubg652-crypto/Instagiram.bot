@@ -13,7 +13,7 @@ TOKEN = "8514343100:AAGcJvEM-wOSMU7ZOdzzbqxZCnE3WMnxDpo"
 ADMIN_ID = 8639222385
 CHANNEL_ID = "@temuzikinsta"
 CHANNEL_LINK = "https://t.me/temuzikinsta"
-BOT_USERNAME = Insa_aqili_bot
+BOT_USERNAME = "Insa_aqili_bot"
 db_path = "bot_data.db"
 bot = Bot(token=TOKEN)
 dp = Dispatcher(storage=MemoryStorage())
