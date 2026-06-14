@@ -10,7 +10,7 @@ from aiogram.fsm.storage.memory import MemoryStorage
 logging.basicConfig(level=logging.INFO)
 
 TOKEN = "8514343100:AAGcJvEM-wOSMU7ZOdzzbqxZCnE3WMnxDpo"
-ADMIN_ID = 567890123
+ADMIN_ID = 8639222385
 BOT_USERNAME = None
 db_path = "bot_data.db"
 bot = Bot(token=TOKEN)
