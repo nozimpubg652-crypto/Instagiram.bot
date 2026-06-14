@@ -1,4 +1,5 @@
 aiogram==3.4.1
-aiosqlite>=0.20.0
-fastapi>=0.110.0
-uvicorn>=0.27.0
+aiosqlite
+fastapi
+uvicorn
+yt-dlp
