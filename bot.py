@@ -142,8 +142,9 @@ async def main():
     await init_db()
     await dp.start_polling(bot)
 
-if __name__ == "__main__": 
-    try: 
+if __name__ == "__main__":
+    try:
         asyncio.run(main())
-    except (KeyboardInterrupt, SystemExit):
-        logging.info("Bot to'xtatildi.")
+    except Exception as e:
+        logging.exception(e)
+    
