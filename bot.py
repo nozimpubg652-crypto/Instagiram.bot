@@ -3,7 +3,7 @@ from aiogram.utils import executor
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 import random
 
-API_TOKEN = "8514343100:AAGnKDxm66i8zTdzBx5FSWEFMtDBIAYbr4s"
+API_TOKEN = "8514343100:AAG70S7e4qlS1B4j0FxRpgppVGMYFvhLYPY"
 ADMIN_ID = 8639222385
 
 bot = Bot(token=API_TOKEN)
