@@ -10,7 +10,7 @@ from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.enums import ChatMemberStatus
 
 # ================= SOZLAMALAR =================
-API_TOKEN = "TOKENINGIZNI_SHU_YERGA_YOZING"
+API_TOKEN = "8250196324:AAEb807EbczLnTcat3X_wJjd996zGXAx2h8"
 ADMIN_ID = 8639222385
 KARTA_RAQAM = "9860 1666 5489 5563"
 CHANNEL_ID = "@temuzikinsta" # Majburiy obuna kanali
