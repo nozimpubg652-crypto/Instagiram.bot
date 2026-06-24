@@ -11,7 +11,7 @@ from aiogram.enums import ChatMemberStatus
 
 # ================= XAVFSIZ SOZLAMALAR =================
 # Token server sozlamalaridan (Environment Variables) avtomatik olinadi
-API_TOKEN = os.getenv("8250196324:AAEb807EbczLnTcat3X_wJjd996zGXAx2h8")
+API_TOKEN = os.getenv("BOT_TOKEN")
 ADMIN_ID = 8639222385
 KARTA_RAQAM = "9860 1666 5489 5563"
 CHANNEL_ID = "@temuzikinsta" 
